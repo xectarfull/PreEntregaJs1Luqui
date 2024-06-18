@@ -1,5 +1,7 @@
+// alerta de bienvenida
 alert("Bienvenido a JsDivisas tu calculadora de divisas favorita")
 
+// funcion montrando el cambio de moneda a querer realizar
 function calcular(divisauno, divisados){
     alert("Quieres cambiar " + divisauno + " por " + divisados + "?" )
 }
@@ -9,16 +11,17 @@ let divisadosingresada = prompt("ingrese la divisa que desea adquirir");
 
 calcular(divisaunoingresada, divisadosingresada);
 
+// funcion para determinar si es joven o adulto
 function determinarEdad(edad) {
     if (edad >= 0 && edad < 18) {
-        return "Niño";
+        return "Joven";
     } else if (edad >= 18) {
         return "Adulto";
     } else {
         return "Edad no válida";
     }
 }
-
+// pruebas al llamar a la funcion 
 console.log(determinarEdad(12));
 console.log(determinarEdad(18));
 
