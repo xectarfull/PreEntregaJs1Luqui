@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divisas</title>
+    <title>JsDivisas</title>
 </head>
 <body>
-    <h1>Calcula tu divisa</h1>
+    <h1>Conversor de Divisas</h1>
+    <div class="form-control">
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" step="any" min="0">
+    </div>
+    <div class="form-control">
+        <label for="monedaOrigen">Divisa de Actual:</label>
+        <select id="monedaOrigen">
+            <option value="">Seleccione una divisa</option>
+            <option value="USD">Dólar estadounidense (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="ARS">Peso Argentino (ARS)</option>
+            <option value="JPY">Yen japonés (JPY)</option>
+        </select>
+    </div>
+    
+    <div class="form-control">
+        <label for="monedaDestino">Divisa de Deseada:</label>
+        <select id="monedaDestino">
+            <option value="">Seleccione una divisa</option>
+            <option value="USD">Dólar estadounidense (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="ARS">Peso Argentino (ARS)</option>
+            <option value="JPY">Yen japonés (JPY)</option>
+        </select>
+    </div>
+    <button onclick="realizarConversion()">Convertir</button>
+    <p id="resultado"></p>
+
+
 <script src="js/main.js"></script>
 </body>
 </html>
