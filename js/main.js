@@ -132,3 +132,20 @@ function realizarConversion() {
         alert('Error en la conversión: ' + error.message);
     }
 }
+
+// Define el array de divisas
+let divisasArray = ["USD", "EUR", "ARS", "JPY"];
+
+// Define el valor a buscar
+let valorABuscar = "USD";
+
+// Verifica si el valor esta en el array
+if (divisasArray.includes(valorABuscar)) {
+    console.log(`El valor ${valorABuscar} está presente en el array.`);
+    // Confirma que el valor esta prensente
+} else {
+    console.log(`El valor ${valorABuscar} no está presente en el array.`);
+    // Confirma que el valor no esta presente
+}
+
+
